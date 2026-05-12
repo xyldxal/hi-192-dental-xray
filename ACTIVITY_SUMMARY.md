@@ -1,0 +1,13 @@
+# Dental OPG Xray Capstone Project Summary
+
+This capstone project asks us to perform multiclass image classification using only the images in `Dental OPG (Classification)`. Only four classes should be included: `Healthy Teeth`, `Caries`, `Impacted teeth`, and `BDC-BDR` for broken down crown/roots. The `Fractured Teeth` and `Infection` folders must be excluded entirely. Based on that filtering, the project uses `481` images.
+
+The dataset should follow an `80-20` split, with `80%` used for development and `20%` used for testing. The `80%` development set is then split into `75%` training and `25%` validation, giving the required totals of `289` training images, `96` validation images, and `96` test images. The same train, validation, and test split must be used for all experiments so that the comparisons remain fair, especially if the work is divided among three people and run in parallel.
+
+The capstone project must compare four CNN architectures: one base CNN and three transfer-learning models. The base CNN should have three sequential convolutional layers with filters `8`, `16`, and `32`, use the Adam optimizer with learning rate `0.0001`, and train for `50` epochs. The transfer-learning models to compare against it are `VGG16`, `ResNet34`, and `DenseNet121`. All models use an input image size of `640 x 640`.
+
+The experiments must vary three hyperparameters: dropout with values `0.2`, `0.5`, and `0.7`; batch size with values `16`, `32`, `64`, and `128`; and dense nodes with values `16`, `32`, and `64`. Since these settings are tested across `4` architectures, the total number of simulations is `144`. Each run should generate training and validation loss curves, training and validation accuracy curves, and AUC curves.
+
+The required preprocessing steps are image resizing to `640 x 640`, normalization, image shuffling, augmentation, and train-test splitting. The instructions say normalization is applied on testing only, while augmentation is applied on training only, with a note mentioning training and validation. Because that wording is a little inconsistent, the exact implementation should be kept as close as possible to the provided code and documented clearly without changing the overall setup more than necessary.
+
+Class imbalance must be handled through class weights using inverse proportional frequency, so minority classes receive larger weights during training. The required evaluation metrics are MCC, accuracy, recall, specificity, precision, F1-score, and AUC. Overall, the task is not yet to interpret results, but to prepare a consistent experimental pipeline, run all `144` model configurations, and document the outputs needed for later comparison.

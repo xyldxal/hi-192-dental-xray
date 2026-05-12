@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Local environments
+.venv/
+venv/
+env/
+
+# IDE/editor
+.vscode/
+
+# Training outputs
+outputs/
+
+# Large compressed dataset copy
+Dental OPG XRAY Dataset.zip

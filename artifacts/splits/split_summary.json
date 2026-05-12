@@ -1,0 +1,52 @@
+{
+  "seed": 42,
+  "image_size": [
+    640,
+    640
+  ],
+  "class_mapping": {
+    "BDC-BDR": 0,
+    "Caries": 1,
+    "Healthy Teeth": 2,
+    "Impacted teeth": 3
+  },
+  "included_class_folders": {
+    "BDC-BDR": "Broken down crown/roots",
+    "Caries": "Caries",
+    "Healthy Teeth": "Healthy teeth",
+    "Impacted teeth": "Impacted teeth"
+  },
+  "excluded_class_folders": [
+    "Fractured Teeth",
+    "Infection"
+  ],
+  "splits": {
+    "train": {
+      "total": 289,
+      "per_class": {
+        "BDC-BDR": 31,
+        "Caries": 71,
+        "Healthy Teeth": 134,
+        "Impacted teeth": 53
+      }
+    },
+    "val": {
+      "total": 96,
+      "per_class": {
+        "BDC-BDR": 11,
+        "Caries": 24,
+        "Healthy Teeth": 44,
+        "Impacted teeth": 17
+      }
+    },
+    "test": {
+      "total": 96,
+      "per_class": {
+        "BDC-BDR": 10,
+        "Caries": 24,
+        "Healthy Teeth": 45,
+        "Impacted teeth": 17
+      }
+    }
+  }
+}
