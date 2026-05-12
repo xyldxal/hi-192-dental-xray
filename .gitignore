@@ -18,3 +18,6 @@ outputs/
 
 # Large compressed dataset copy
 Dental OPG XRAY Dataset.zip
+
+# Keep only the classification subset from the extracted dataset
+Dental OPG XRAY Dataset/Dental OPG XRAY Dataset/Dental OPG (Object Detection)/
