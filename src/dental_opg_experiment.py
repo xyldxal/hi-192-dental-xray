@@ -131,7 +131,7 @@ def list_included_samples(dataset_root: Path | str | None = None) -> List[Sample
                     class_index=class_index_mapping[class_folder],
                     filename=image_path.name,
                     filepath=str(image_path.resolve()),
-                    relative_path=str(image_path.relative_to(root)),
+                    relative_path=image_path.relative_to(root).as_posix(),
                 )
             )
 
@@ -394,7 +394,8 @@ def resolve_manifest_filepaths(
         raw_filepath = str(resolved_row.get("filepath", "")).strip()
 
         if relative_path:
-            filepath = (resolved_root / relative_path).resolve()
+            normalized_relative_path = relative_path.replace("\\", "/")
+            filepath = (resolved_root / Path(normalized_relative_path)).resolve()
         elif raw_filepath:
             filepath = Path(raw_filepath).resolve()
         else:

@@ -1,97 +1,97 @@
 split,class_folder,class_label,class_index,filename,relative_path
-val,BDC-BDR,Broken down crown/roots,0,11.jpg,BDC-BDR\11.jpg
-val,BDC-BDR,Broken down crown/roots,0,125.jpg,BDC-BDR\125.jpg
-val,BDC-BDR,Broken down crown/roots,0,19.jpg,BDC-BDR\19.jpg
-val,BDC-BDR,Broken down crown/roots,0,2.jpg,BDC-BDR\2.jpg
-val,BDC-BDR,Broken down crown/roots,0,21.jpg,BDC-BDR\21.jpg
-val,BDC-BDR,Broken down crown/roots,0,214.jpg,BDC-BDR\214.jpg
-val,BDC-BDR,Broken down crown/roots,0,222.jpg,BDC-BDR\222.jpg
-val,BDC-BDR,Broken down crown/roots,0,229.jpg,BDC-BDR\229.jpg
-val,BDC-BDR,Broken down crown/roots,0,34.jpg,BDC-BDR\34.jpg
-val,BDC-BDR,Broken down crown/roots,0,62.jpg,BDC-BDR\62.jpg
-val,BDC-BDR,Broken down crown/roots,0,77.jpg,BDC-BDR\77.jpg
-val,Caries,Caries,1,101.jpg,Caries\101.jpg
-val,Caries,Caries,1,117.jpg,Caries\117.jpg
-val,Caries,Caries,1,120.jpg,Caries\120.jpg
-val,Caries,Caries,1,123.jpg,Caries\123.jpg
-val,Caries,Caries,1,131.jpg,Caries\131.jpg
-val,Caries,Caries,1,142.jpg,Caries\142.jpg
-val,Caries,Caries,1,144.jpg,Caries\144.jpg
-val,Caries,Caries,1,19.jpg,Caries\19.jpg
-val,Caries,Caries,1,20.jpg,Caries\20.jpg
-val,Caries,Caries,1,204.jpg,Caries\204.jpg
-val,Caries,Caries,1,210.jpg,Caries\210.jpg
-val,Caries,Caries,1,215.jpg,Caries\215.jpg
-val,Caries,Caries,1,217.jpg,Caries\217.jpg
-val,Caries,Caries,1,220.jpg,Caries\220.jpg
-val,Caries,Caries,1,222.jpg,Caries\222.jpg
-val,Caries,Caries,1,23.jpg,Caries\23.jpg
-val,Caries,Caries,1,232.jpg,Caries\232.jpg
-val,Caries,Caries,1,26.jpg,Caries\26.jpg
-val,Caries,Caries,1,37.jpg,Caries\37.jpg
-val,Caries,Caries,1,42.jpg,Caries\42.jpg
-val,Caries,Caries,1,52.jpg,Caries\52.jpg
-val,Caries,Caries,1,54.jpg,Caries\54.jpg
-val,Caries,Caries,1,59.jpg,Caries\59.jpg
-val,Caries,Caries,1,64.jpg,Caries\64.jpg
-val,Healthy Teeth,Healthy teeth,2,100.jpg,Healthy Teeth\100.jpg
-val,Healthy Teeth,Healthy teeth,2,109.jpg,Healthy Teeth\109.jpg
-val,Healthy Teeth,Healthy teeth,2,117.jpg,Healthy Teeth\117.jpg
-val,Healthy Teeth,Healthy teeth,2,123.jpg,Healthy Teeth\123.jpg
-val,Healthy Teeth,Healthy teeth,2,134.jpg,Healthy Teeth\134.jpg
-val,Healthy Teeth,Healthy teeth,2,135.jpg,Healthy Teeth\135.jpg
-val,Healthy Teeth,Healthy teeth,2,136.jpg,Healthy Teeth\136.jpg
-val,Healthy Teeth,Healthy teeth,2,137.jpg,Healthy Teeth\137.jpg
-val,Healthy Teeth,Healthy teeth,2,161.jpg,Healthy Teeth\161.jpg
-val,Healthy Teeth,Healthy teeth,2,162.jpg,Healthy Teeth\162.jpg
-val,Healthy Teeth,Healthy teeth,2,171.jpg,Healthy Teeth\171.jpg
-val,Healthy Teeth,Healthy teeth,2,172.jpg,Healthy Teeth\172.jpg
-val,Healthy Teeth,Healthy teeth,2,176.jpg,Healthy Teeth\176.jpg
-val,Healthy Teeth,Healthy teeth,2,179.jpg,Healthy Teeth\179.jpg
-val,Healthy Teeth,Healthy teeth,2,189.jpg,Healthy Teeth\189.jpg
-val,Healthy Teeth,Healthy teeth,2,191.jpg,Healthy Teeth\191.jpg
-val,Healthy Teeth,Healthy teeth,2,201.jpg,Healthy Teeth\201.jpg
-val,Healthy Teeth,Healthy teeth,2,202.jpg,Healthy Teeth\202.jpg
-val,Healthy Teeth,Healthy teeth,2,203.jpg,Healthy Teeth\203.jpg
-val,Healthy Teeth,Healthy teeth,2,210.jpg,Healthy Teeth\210.jpg
-val,Healthy Teeth,Healthy teeth,2,219.jpg,Healthy Teeth\219.jpg
-val,Healthy Teeth,Healthy teeth,2,221.jpg,Healthy Teeth\221.jpg
-val,Healthy Teeth,Healthy teeth,2,227.jpg,Healthy Teeth\227.jpg
-val,Healthy Teeth,Healthy teeth,2,230.jpg,Healthy Teeth\230.jpg
-val,Healthy Teeth,Healthy teeth,2,237.jpg,Healthy Teeth\237.jpg
-val,Healthy Teeth,Healthy teeth,2,247.jpg,Healthy Teeth\247.jpg
-val,Healthy Teeth,Healthy teeth,2,248.jpg,Healthy Teeth\248.jpg
-val,Healthy Teeth,Healthy teeth,2,253.jpg,Healthy Teeth\253.jpg
-val,Healthy Teeth,Healthy teeth,2,257.jpg,Healthy Teeth\257.jpg
-val,Healthy Teeth,Healthy teeth,2,260.jpg,Healthy Teeth\260.jpg
-val,Healthy Teeth,Healthy teeth,2,27.jpg,Healthy Teeth\27.jpg
-val,Healthy Teeth,Healthy teeth,2,40.jpg,Healthy Teeth\40.jpg
-val,Healthy Teeth,Healthy teeth,2,44.jpg,Healthy Teeth\44.jpg
-val,Healthy Teeth,Healthy teeth,2,45.jpg,Healthy Teeth\45.jpg
-val,Healthy Teeth,Healthy teeth,2,54.jpg,Healthy Teeth\54.jpg
-val,Healthy Teeth,Healthy teeth,2,59.jpg,Healthy Teeth\59.jpg
-val,Healthy Teeth,Healthy teeth,2,6.jpg,Healthy Teeth\6.jpg
-val,Healthy Teeth,Healthy teeth,2,60.jpg,Healthy Teeth\60.jpg
-val,Healthy Teeth,Healthy teeth,2,77.jpg,Healthy Teeth\77.jpg
-val,Healthy Teeth,Healthy teeth,2,82.jpg,Healthy Teeth\82.jpg
-val,Healthy Teeth,Healthy teeth,2,87.jpg,Healthy Teeth\87.jpg
-val,Healthy Teeth,Healthy teeth,2,9.jpg,Healthy Teeth\9.jpg
-val,Healthy Teeth,Healthy teeth,2,90.jpg,Healthy Teeth\90.jpg
-val,Healthy Teeth,Healthy teeth,2,93.jpg,Healthy Teeth\93.jpg
-val,Impacted teeth,Impacted teeth,3,108.jpg,Impacted teeth\108.jpg
-val,Impacted teeth,Impacted teeth,3,116.jpg,Impacted teeth\116.jpg
-val,Impacted teeth,Impacted teeth,3,128.jpg,Impacted teeth\128.jpg
-val,Impacted teeth,Impacted teeth,3,152.jpg,Impacted teeth\152.jpg
-val,Impacted teeth,Impacted teeth,3,158.jpg,Impacted teeth\158.jpg
-val,Impacted teeth,Impacted teeth,3,164.jpg,Impacted teeth\164.jpg
-val,Impacted teeth,Impacted teeth,3,165.jpg,Impacted teeth\165.jpg
-val,Impacted teeth,Impacted teeth,3,177.jpg,Impacted teeth\177.jpg
-val,Impacted teeth,Impacted teeth,3,180.jpg,Impacted teeth\180.jpg
-val,Impacted teeth,Impacted teeth,3,196.jpg,Impacted teeth\196.jpg
-val,Impacted teeth,Impacted teeth,3,201.jpg,Impacted teeth\201.jpg
-val,Impacted teeth,Impacted teeth,3,202.jpg,Impacted teeth\202.jpg
-val,Impacted teeth,Impacted teeth,3,225.jpg,Impacted teeth\225.jpg
-val,Impacted teeth,Impacted teeth,3,32.jpg,Impacted teeth\32.jpg
-val,Impacted teeth,Impacted teeth,3,58.jpg,Impacted teeth\58.jpg
-val,Impacted teeth,Impacted teeth,3,68.jpg,Impacted teeth\68.jpg
-val,Impacted teeth,Impacted teeth,3,88.jpg,Impacted teeth\88.jpg
+val,BDC-BDR,Broken down crown/roots,0,11.jpg,BDC-BDR/11.jpg
+val,BDC-BDR,Broken down crown/roots,0,125.jpg,BDC-BDR/125.jpg
+val,BDC-BDR,Broken down crown/roots,0,19.jpg,BDC-BDR/19.jpg
+val,BDC-BDR,Broken down crown/roots,0,2.jpg,BDC-BDR/2.jpg
+val,BDC-BDR,Broken down crown/roots,0,21.jpg,BDC-BDR/21.jpg
+val,BDC-BDR,Broken down crown/roots,0,214.jpg,BDC-BDR/214.jpg
+val,BDC-BDR,Broken down crown/roots,0,222.jpg,BDC-BDR/222.jpg
+val,BDC-BDR,Broken down crown/roots,0,229.jpg,BDC-BDR/229.jpg
+val,BDC-BDR,Broken down crown/roots,0,34.jpg,BDC-BDR/34.jpg
+val,BDC-BDR,Broken down crown/roots,0,62.jpg,BDC-BDR/62.jpg
+val,BDC-BDR,Broken down crown/roots,0,77.jpg,BDC-BDR/77.jpg
+val,Caries,Caries,1,101.jpg,Caries/101.jpg
+val,Caries,Caries,1,117.jpg,Caries/117.jpg
+val,Caries,Caries,1,120.jpg,Caries/120.jpg
+val,Caries,Caries,1,123.jpg,Caries/123.jpg
+val,Caries,Caries,1,131.jpg,Caries/131.jpg
+val,Caries,Caries,1,142.jpg,Caries/142.jpg
+val,Caries,Caries,1,144.jpg,Caries/144.jpg
+val,Caries,Caries,1,19.jpg,Caries/19.jpg
+val,Caries,Caries,1,20.jpg,Caries/20.jpg
+val,Caries,Caries,1,204.jpg,Caries/204.jpg
+val,Caries,Caries,1,210.jpg,Caries/210.jpg
+val,Caries,Caries,1,215.jpg,Caries/215.jpg
+val,Caries,Caries,1,217.jpg,Caries/217.jpg
+val,Caries,Caries,1,220.jpg,Caries/220.jpg
+val,Caries,Caries,1,222.jpg,Caries/222.jpg
+val,Caries,Caries,1,23.jpg,Caries/23.jpg
+val,Caries,Caries,1,232.jpg,Caries/232.jpg
+val,Caries,Caries,1,26.jpg,Caries/26.jpg
+val,Caries,Caries,1,37.jpg,Caries/37.jpg
+val,Caries,Caries,1,42.jpg,Caries/42.jpg
+val,Caries,Caries,1,52.jpg,Caries/52.jpg
+val,Caries,Caries,1,54.jpg,Caries/54.jpg
+val,Caries,Caries,1,59.jpg,Caries/59.jpg
+val,Caries,Caries,1,64.jpg,Caries/64.jpg
+val,Healthy Teeth,Healthy teeth,2,100.jpg,Healthy Teeth/100.jpg
+val,Healthy Teeth,Healthy teeth,2,109.jpg,Healthy Teeth/109.jpg
+val,Healthy Teeth,Healthy teeth,2,117.jpg,Healthy Teeth/117.jpg
+val,Healthy Teeth,Healthy teeth,2,123.jpg,Healthy Teeth/123.jpg
+val,Healthy Teeth,Healthy teeth,2,134.jpg,Healthy Teeth/134.jpg
+val,Healthy Teeth,Healthy teeth,2,135.jpg,Healthy Teeth/135.jpg
+val,Healthy Teeth,Healthy teeth,2,136.jpg,Healthy Teeth/136.jpg
+val,Healthy Teeth,Healthy teeth,2,137.jpg,Healthy Teeth/137.jpg
+val,Healthy Teeth,Healthy teeth,2,161.jpg,Healthy Teeth/161.jpg
+val,Healthy Teeth,Healthy teeth,2,162.jpg,Healthy Teeth/162.jpg
+val,Healthy Teeth,Healthy teeth,2,171.jpg,Healthy Teeth/171.jpg
+val,Healthy Teeth,Healthy teeth,2,172.jpg,Healthy Teeth/172.jpg
+val,Healthy Teeth,Healthy teeth,2,176.jpg,Healthy Teeth/176.jpg
+val,Healthy Teeth,Healthy teeth,2,179.jpg,Healthy Teeth/179.jpg
+val,Healthy Teeth,Healthy teeth,2,189.jpg,Healthy Teeth/189.jpg
+val,Healthy Teeth,Healthy teeth,2,191.jpg,Healthy Teeth/191.jpg
+val,Healthy Teeth,Healthy teeth,2,201.jpg,Healthy Teeth/201.jpg
+val,Healthy Teeth,Healthy teeth,2,202.jpg,Healthy Teeth/202.jpg
+val,Healthy Teeth,Healthy teeth,2,203.jpg,Healthy Teeth/203.jpg
+val,Healthy Teeth,Healthy teeth,2,210.jpg,Healthy Teeth/210.jpg
+val,Healthy Teeth,Healthy teeth,2,219.jpg,Healthy Teeth/219.jpg
+val,Healthy Teeth,Healthy teeth,2,221.jpg,Healthy Teeth/221.jpg
+val,Healthy Teeth,Healthy teeth,2,227.jpg,Healthy Teeth/227.jpg
+val,Healthy Teeth,Healthy teeth,2,230.jpg,Healthy Teeth/230.jpg
+val,Healthy Teeth,Healthy teeth,2,237.jpg,Healthy Teeth/237.jpg
+val,Healthy Teeth,Healthy teeth,2,247.jpg,Healthy Teeth/247.jpg
+val,Healthy Teeth,Healthy teeth,2,248.jpg,Healthy Teeth/248.jpg
+val,Healthy Teeth,Healthy teeth,2,253.jpg,Healthy Teeth/253.jpg
+val,Healthy Teeth,Healthy teeth,2,257.jpg,Healthy Teeth/257.jpg
+val,Healthy Teeth,Healthy teeth,2,260.jpg,Healthy Teeth/260.jpg
+val,Healthy Teeth,Healthy teeth,2,27.jpg,Healthy Teeth/27.jpg
+val,Healthy Teeth,Healthy teeth,2,40.jpg,Healthy Teeth/40.jpg
+val,Healthy Teeth,Healthy teeth,2,44.jpg,Healthy Teeth/44.jpg
+val,Healthy Teeth,Healthy teeth,2,45.jpg,Healthy Teeth/45.jpg
+val,Healthy Teeth,Healthy teeth,2,54.jpg,Healthy Teeth/54.jpg
+val,Healthy Teeth,Healthy teeth,2,59.jpg,Healthy Teeth/59.jpg
+val,Healthy Teeth,Healthy teeth,2,6.jpg,Healthy Teeth/6.jpg
+val,Healthy Teeth,Healthy teeth,2,60.jpg,Healthy Teeth/60.jpg
+val,Healthy Teeth,Healthy teeth,2,77.jpg,Healthy Teeth/77.jpg
+val,Healthy Teeth,Healthy teeth,2,82.jpg,Healthy Teeth/82.jpg
+val,Healthy Teeth,Healthy teeth,2,87.jpg,Healthy Teeth/87.jpg
+val,Healthy Teeth,Healthy teeth,2,9.jpg,Healthy Teeth/9.jpg
+val,Healthy Teeth,Healthy teeth,2,90.jpg,Healthy Teeth/90.jpg
+val,Healthy Teeth,Healthy teeth,2,93.jpg,Healthy Teeth/93.jpg
+val,Impacted teeth,Impacted teeth,3,108.jpg,Impacted teeth/108.jpg
+val,Impacted teeth,Impacted teeth,3,116.jpg,Impacted teeth/116.jpg
+val,Impacted teeth,Impacted teeth,3,128.jpg,Impacted teeth/128.jpg
+val,Impacted teeth,Impacted teeth,3,152.jpg,Impacted teeth/152.jpg
+val,Impacted teeth,Impacted teeth,3,158.jpg,Impacted teeth/158.jpg
+val,Impacted teeth,Impacted teeth,3,164.jpg,Impacted teeth/164.jpg
+val,Impacted teeth,Impacted teeth,3,165.jpg,Impacted teeth/165.jpg
+val,Impacted teeth,Impacted teeth,3,177.jpg,Impacted teeth/177.jpg
+val,Impacted teeth,Impacted teeth,3,180.jpg,Impacted teeth/180.jpg
+val,Impacted teeth,Impacted teeth,3,196.jpg,Impacted teeth/196.jpg
+val,Impacted teeth,Impacted teeth,3,201.jpg,Impacted teeth/201.jpg
+val,Impacted teeth,Impacted teeth,3,202.jpg,Impacted teeth/202.jpg
+val,Impacted teeth,Impacted teeth,3,225.jpg,Impacted teeth/225.jpg
+val,Impacted teeth,Impacted teeth,3,32.jpg,Impacted teeth/32.jpg
+val,Impacted teeth,Impacted teeth,3,58.jpg,Impacted teeth/58.jpg
+val,Impacted teeth,Impacted teeth,3,68.jpg,Impacted teeth/68.jpg
+val,Impacted teeth,Impacted teeth,3,88.jpg,Impacted teeth/88.jpg
