@@ -577,23 +577,25 @@ def build_base_cnn_model(num_classes: int, dropout: float, dense_units: int, lea
     deps = ensure_training_dependencies()
     tf = deps["tf"]
 
-    # Dropout is applied only in the dense head. BatchNormalization stabilises
-    # gradients in the conv blocks, preventing the loss-spike-then-collapse
-    # (loss ≈ 1.3863 flat) that occurs when dropout is stacked after every
-    # pooling layer with high dropout rates (0.5 / 0.7).
+    # he_normal initialisation is used instead of BatchNormalization.
+    # BN with only ~19 batches/epoch (289 images, batch_size 16) causes its
+    # running statistics to never stabilise, producing an exploding val_loss
+    # while val_accuracy stays flat. he_normal solves the epoch-1 gradient
+    # spike without creating a train/inference discrepancy.
+    # Dropout is kept only in the dense head to prevent the original
+    # dead-network collapse (loss ≈ 1.3863) that occurred when dropout was
+    # stacked after every conv block.
     model = tf.keras.models.Sequential(
         [
-            tf.keras.layers.Conv2D(8, kernel_size=(3, 3), activation="relu", input_shape=INPUT_SHAPE),
-            tf.keras.layers.BatchNormalization(),
+            tf.keras.layers.Input(shape=INPUT_SHAPE),
+            tf.keras.layers.Conv2D(8, kernel_size=(3, 3), activation="relu", kernel_initializer="he_normal"),
             tf.keras.layers.MaxPool2D(pool_size=(2, 2)),
-            tf.keras.layers.Conv2D(16, kernel_size=(3, 3), activation="relu"),
-            tf.keras.layers.BatchNormalization(),
+            tf.keras.layers.Conv2D(16, kernel_size=(3, 3), activation="relu", kernel_initializer="he_normal"),
             tf.keras.layers.MaxPool2D(pool_size=(2, 2)),
-            tf.keras.layers.Conv2D(32, kernel_size=(3, 3), activation="relu"),
-            tf.keras.layers.BatchNormalization(),
+            tf.keras.layers.Conv2D(32, kernel_size=(3, 3), activation="relu", kernel_initializer="he_normal"),
             tf.keras.layers.MaxPool2D(pool_size=(2, 2)),
             tf.keras.layers.Flatten(),
-            tf.keras.layers.Dense(dense_units, activation="relu"),
+            tf.keras.layers.Dense(dense_units, activation="relu", kernel_initializer="he_normal"),
             tf.keras.layers.Dropout(dropout),
             tf.keras.layers.Dense(num_classes, activation="softmax"),
         ]
