@@ -585,6 +585,13 @@ def build_base_cnn_model(num_classes: int, dropout: float, dense_units: int, lea
     # Dropout is kept only in the dense head to prevent the original
     # dead-network collapse (loss ≈ 1.3863) that occurred when dropout was
     # stacked after every conv block.
+    # Flatten on a 640x640 input after 3x MaxPool(2,2) produces 78x78x32 =
+    # 194,688 features. Dense(64) alone then has 12.5M parameters for 289
+    # training samples (43,000 params/sample) — the gradient is swamped and
+    # training is mathematically impossible. GlobalAveragePooling2D reduces
+    # each feature map to one scalar → 32 features total → Dense(64) has
+    # 2,112 parameters, which is learnable. The three conv layers (8, 16, 32)
+    # are unchanged.
     model = tf.keras.models.Sequential(
         [
             tf.keras.layers.Input(shape=INPUT_SHAPE),
@@ -594,10 +601,13 @@ def build_base_cnn_model(num_classes: int, dropout: float, dense_units: int, lea
             tf.keras.layers.MaxPool2D(pool_size=(2, 2)),
             tf.keras.layers.Conv2D(32, kernel_size=(3, 3), activation="relu", kernel_initializer="he_normal"),
             tf.keras.layers.MaxPool2D(pool_size=(2, 2)),
+<<<<<<< HEAD
             # GlobalAveragePooling2D replaces Flatten to avoid the 204,800->dense
             # bottleneck that caused the network to collapse (loss stuck at ln(4)=1.3863).
             # After 3x MaxPool(2,2) on 640x640, the spatial map is 80x80x32.
             # GAP compresses this to 32 values, a proportionate input for Dense(16/32/64).
+=======
+>>>>>>> 62802618d97e3ec00273f4d3dddfc8fa6a9307f7
             tf.keras.layers.GlobalAveragePooling2D(),
             tf.keras.layers.Dense(dense_units, activation="relu", kernel_initializer="he_normal"),
             tf.keras.layers.Dropout(dropout),
