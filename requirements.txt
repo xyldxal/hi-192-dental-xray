@@ -1,5 +1,5 @@
 tensorflow>=2.12,<2.22
-numpy
+numpy>=1.26,<2
 pandas
 matplotlib
 scikit-learn
