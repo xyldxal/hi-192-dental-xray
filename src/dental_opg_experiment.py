@@ -605,7 +605,7 @@ def build_transfer_model(
             from classification_models.tfkeras import Classifiers
         except ImportError as exc:
             raise ImportError(
-                "ResNet34 transfer learning requires the `classification-models` package."
+                "ResNet34 transfer learning requires the `image-classifiers` package."
             ) from exc
 
         ResNet34, _ = Classifiers.get("resnet34")
