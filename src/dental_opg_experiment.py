@@ -577,19 +577,22 @@ def build_base_cnn_model(num_classes: int, dropout: float, dense_units: int, lea
     deps = ensure_training_dependencies()
     tf = deps["tf"]
 
+    # Dropout is applied only in the dense head. BatchNormalization stabilises
+    # gradients in the conv blocks, preventing the loss-spike-then-collapse
+    # (loss ≈ 1.3863 flat) that occurs when dropout is stacked after every
+    # pooling layer with high dropout rates (0.5 / 0.7).
     model = tf.keras.models.Sequential(
         [
             tf.keras.layers.Conv2D(8, kernel_size=(3, 3), activation="relu", input_shape=INPUT_SHAPE),
+            tf.keras.layers.BatchNormalization(),
             tf.keras.layers.MaxPool2D(pool_size=(2, 2)),
-            tf.keras.layers.Dropout(dropout),
             tf.keras.layers.Conv2D(16, kernel_size=(3, 3), activation="relu"),
+            tf.keras.layers.BatchNormalization(),
             tf.keras.layers.MaxPool2D(pool_size=(2, 2)),
-            tf.keras.layers.Dropout(dropout),
             tf.keras.layers.Conv2D(32, kernel_size=(3, 3), activation="relu"),
+            tf.keras.layers.BatchNormalization(),
             tf.keras.layers.MaxPool2D(pool_size=(2, 2)),
-            tf.keras.layers.Dropout(dropout),
             tf.keras.layers.Flatten(),
-            tf.keras.layers.Dropout(dropout),
             tf.keras.layers.Dense(dense_units, activation="relu"),
             tf.keras.layers.Dropout(dropout),
             tf.keras.layers.Dense(num_classes, activation="softmax"),
@@ -645,10 +648,12 @@ def build_transfer_model(
 
     backbone.trainable = False
 
+    # Build as a functional model so that the `training` flag is forwarded
+    # correctly to Dropout layers (backbone stays in inference mode via
+    # `training=False`, while the dense-head dropout activates during fit).
     inputs = tf.keras.Input(shape=INPUT_SHAPE)
     x = backbone(inputs, training=False)
     x = tf.keras.layers.GlobalAveragePooling2D()(x)
-    x = tf.keras.layers.Dropout(dropout)(x)
     x = tf.keras.layers.Dense(dense_units, activation="relu")(x)
     x = tf.keras.layers.Dropout(dropout)(x)
     outputs = tf.keras.layers.Dense(num_classes, activation="softmax")(x)
