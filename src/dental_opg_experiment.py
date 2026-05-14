@@ -481,32 +481,59 @@ def ensure_training_dependencies() -> Dict[str, object]:
     }
 
 
+def get_preprocessing_function(architecture: str):
+    deps = ensure_training_dependencies()
+    tf = deps["tf"]
+
+    if architecture == "base_cnn":
+        return lambda image: image / 255.0
+    if architecture == "vgg16":
+        return tf.keras.applications.vgg16.preprocess_input
+    if architecture == "densenet121":
+        return tf.keras.applications.densenet.preprocess_input
+    if architecture == "resnet34":
+        try:
+            from classification_models.tfkeras import Classifiers
+        except ImportError as exc:
+            raise ImportError(
+                "ResNet34 transfer learning requires the `classification-models` package."
+            ) from exc
+
+        _, preprocess_input = Classifiers.get("resnet34")
+        return preprocess_input
+
+    raise ValueError(f"Unsupported architecture for preprocessing: {architecture}")
+
+
 def build_data_generators(
     train_df,
     val_df,
     test_df,
+    architecture: str,
     batch_size: int,
     image_size: Tuple[int, int] = IMAGE_SIZE,
     seed: int = DEFAULT_SEED,
 ):
     deps = ensure_training_dependencies()
     tf = deps["tf"]
+    preprocessing_function = get_preprocessing_function(architecture)
 
-    train_val_datagen = tf.keras.preprocessing.image.ImageDataGenerator(
+    train_datagen = tf.keras.preprocessing.image.ImageDataGenerator(
+        preprocessing_function=preprocessing_function,
         rotation_range=30,
         width_shift_range=0.15,
         shear_range=0.3,
         zoom_range=0.3,
         horizontal_flip=True,
     )
-    test_datagen = tf.keras.preprocessing.image.ImageDataGenerator(
-        samplewise_std_normalization=True,
+    eval_datagen = tf.keras.preprocessing.image.ImageDataGenerator(
+        preprocessing_function=preprocessing_function,
     )
 
     class_mode = "categorical"
     class_order = [folder for folder in sorted(INCLUDED_CLASS_FOLDERS)]
 
-    train_gen = train_val_datagen.flow_from_dataframe(
+    train_gen = train_datagen.flow_from_dataframe(
         dataframe=train_df,
         x_col="filepath",
         y_col="class_folder",
@@ -519,7 +546,7 @@ def build_data_generators(
         seed=seed,
     )
 
-    val_gen = train_val_datagen.flow_from_dataframe(
+    val_gen = eval_datagen.flow_from_dataframe(
         dataframe=val_df,
         x_col="filepath",
         y_col="class_folder",
@@ -528,11 +555,10 @@ def build_data_generators(
         color_mode="rgb",
         class_mode=class_mode,
         batch_size=batch_size,
-        shuffle=True,
-        seed=seed,
+        shuffle=False,
     )
 
-    test_gen = test_datagen.flow_from_dataframe(
+    test_gen = eval_datagen.flow_from_dataframe(
         dataframe=test_df,
         x_col="filepath",
         y_col="class_folder",
@@ -708,6 +734,7 @@ def train_single_config(
         train_df=train_df,
         val_df=val_df,
         test_df=test_df,
+        architecture=str(config["architecture"]),
         batch_size=int(config["batch_size"]),
         image_size=(int(config["image_width"]), int(config["image_height"])),
         seed=seed,

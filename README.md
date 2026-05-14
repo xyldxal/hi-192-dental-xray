@@ -101,5 +101,6 @@ Each config saves to `outputs/part_X/config_id/`:
 - Epochs are fixed at `50`
 - Class weights use inverse proportional frequency based on the training split
 - Output layer is multiclass softmax for `4` classes
-- Augmentation is applied to training and validation generators
-- Test generator uses normalization only
+- Augmentation is applied to the training generator only
+- Validation and test generators use preprocessing only, with no augmentation
+- Transfer-learning models use architecture-specific preprocessing to match their pretrained weights
