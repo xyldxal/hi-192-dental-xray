@@ -601,13 +601,10 @@ def build_base_cnn_model(num_classes: int, dropout: float, dense_units: int, lea
             tf.keras.layers.MaxPool2D(pool_size=(2, 2)),
             tf.keras.layers.Conv2D(32, kernel_size=(3, 3), activation="relu", kernel_initializer="he_normal"),
             tf.keras.layers.MaxPool2D(pool_size=(2, 2)),
-<<<<<<< HEAD
             # GlobalAveragePooling2D replaces Flatten to avoid the 204,800->dense
             # bottleneck that caused the network to collapse (loss stuck at ln(4)=1.3863).
             # After 3x MaxPool(2,2) on 640x640, the spatial map is 80x80x32.
             # GAP compresses this to 32 values, a proportionate input for Dense(16/32/64).
-=======
->>>>>>> 62802618d97e3ec00273f4d3dddfc8fa6a9307f7
             tf.keras.layers.GlobalAveragePooling2D(),
             tf.keras.layers.Dense(dense_units, activation="relu", kernel_initializer="he_normal"),
             tf.keras.layers.Dropout(dropout),
