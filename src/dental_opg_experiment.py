@@ -520,10 +520,10 @@ def build_data_generators(
 
     train_datagen = tf.keras.preprocessing.image.ImageDataGenerator(
         preprocessing_function=preprocessing_function,
-        rotation_range=30,
-        width_shift_range=0.15,
-        shear_range=0.3,
-        zoom_range=0.3,
+        rotation_range=10,
+        width_shift_range=0.1,
+        shear_range=0.1,
+        zoom_range=0.1,
         horizontal_flip=True,
     )
     eval_datagen = tf.keras.preprocessing.image.ImageDataGenerator(
@@ -594,7 +594,11 @@ def build_base_cnn_model(num_classes: int, dropout: float, dense_units: int, lea
             tf.keras.layers.MaxPool2D(pool_size=(2, 2)),
             tf.keras.layers.Conv2D(32, kernel_size=(3, 3), activation="relu", kernel_initializer="he_normal"),
             tf.keras.layers.MaxPool2D(pool_size=(2, 2)),
-            tf.keras.layers.Flatten(),
+            # GlobalAveragePooling2D replaces Flatten to avoid the 204,800->dense
+            # bottleneck that caused the network to collapse (loss stuck at ln(4)=1.3863).
+            # After 3x MaxPool(2,2) on 640x640, the spatial map is 80x80x32.
+            # GAP compresses this to 32 values, a proportionate input for Dense(16/32/64).
+            tf.keras.layers.GlobalAveragePooling2D(),
             tf.keras.layers.Dense(dense_units, activation="relu", kernel_initializer="he_normal"),
             tf.keras.layers.Dropout(dropout),
             tf.keras.layers.Dense(num_classes, activation="softmax"),
