@@ -1,0 +1,77 @@
+{
+  "seed": 42,
+  "image_size": [
+    640,
+    640
+  ],
+  "label_task": "multilabel_classification",
+  "label_rule": "One row per original radiograph ID. Every classification-folder membership becomes an independent binary target; no folder is forced to be the single winning class.",
+  "class_folders": [
+    "BDC-BDR",
+    "Caries",
+    "Healthy Teeth",
+    "Impacted teeth"
+  ],
+  "class_folder_labels": {
+    "BDC-BDR": "Broken down crown/roots",
+    "Caries": "Caries",
+    "Healthy Teeth": "Healthy teeth",
+    "Impacted teeth": "Impacted teeth"
+  },
+  "class_folder_to_label_column": {
+    "BDC-BDR": "label_bdc_bdr",
+    "Caries": "label_caries",
+    "Healthy Teeth": "label_healthy_teeth",
+    "Impacted teeth": "label_impacted_teeth"
+  },
+  "total_unique_images": 231,
+  "total_folder_memberships": 481,
+  "multi_positive_images": 169,
+  "splits": {
+    "train": {
+      "total": 139,
+      "per_label_positive": {
+        "BDC-BDR": 32,
+        "Caries": 69,
+        "Healthy Teeth": 135,
+        "Impacted teeth": 59
+      },
+      "label_count_distribution": {
+        "1": 35,
+        "2": 60,
+        "3": 36,
+        "4": 8
+      }
+    },
+    "val": {
+      "total": 46,
+      "per_label_positive": {
+        "BDC-BDR": 8,
+        "Caries": 28,
+        "Healthy Teeth": 43,
+        "Impacted teeth": 13
+      },
+      "label_count_distribution": {
+        "1": 15,
+        "2": 17,
+        "3": 13,
+        "4": 1
+      }
+    },
+    "test": {
+      "total": 46,
+      "per_label_positive": {
+        "BDC-BDR": 12,
+        "Caries": 22,
+        "Healthy Teeth": 45,
+        "Impacted teeth": 15
+      },
+      "label_count_distribution": {
+        "1": 12,
+        "2": 22,
+        "3": 10,
+        "4": 2
+      }
+    }
+  }
+}
