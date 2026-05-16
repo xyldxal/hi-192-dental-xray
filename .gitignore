@@ -15,6 +15,10 @@ env/
 
 # Training outputs
 outputs/
+outputs_primary_condition/
+outputs_multilabel/
+outputs_yolo_detection/
+yolo_detection_dataset/
 
 # Large compressed dataset copy
 Dental OPG XRAY Dataset.zip

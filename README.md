@@ -17,11 +17,13 @@ These folders remain present in the source dataset but are excluded from trainin
 - `Dental OPG XRAY Dataset/Dental OPG XRAY Dataset/Dental OPG (Classification)/`
 - `artifacts/splits/`
 - `artifacts/configs/`
+- `artifacts/multilabel_splits/`
+- `artifacts/multilabel_configs/`
 - `notebooks/`
 - `scripts/`
 - `src/`
 
-The extracted image dataset is intended to be committed to GitHub with the repo. The compressed file `Dental OPG XRAY Dataset.zip` stays ignored because it is too large and not needed once the folder is extracted.
+The extracted classification dataset is intended to be committed to GitHub with the repo. The compressed file `Dental OPG XRAY Dataset.zip` and object-detection folder stay ignored because they are not needed for the current multilabel CNN workflow.
 
 ## Split Summary
 
@@ -80,6 +82,14 @@ Use the notebook bootstrap cell if you open the notebook from GitHub in Colab:
 
 Detailed instructions are in [GOOGLE_COLAB_WORKFLOW.md](D:/road%20to%20summa/4th%20year%20last%20sem/hi%20192/hi-192-dental-xray/GOOGLE_COLAB_WORKFLOW.md).
 
+## Multilabel Classification Workflow
+
+A separate multilabel CNN workflow is available for the current dataset interpretation. It uses one row per original radiograph and preserves every classification-folder membership as a binary label, so images with multiple folder memberships are no longer forced into one class.
+
+Run `notebooks/14_multilabel_setup.ipynb`, then the part notebooks `15` to `17`, then `18_multilabel_results.ipynb`.
+
+See [MULTILABEL_WORKFLOW.md](D:/road%20to%20summa/4th%20year%20last%20sem/hi%20192/hi-192-dental-xray/MULTILABEL_WORKFLOW.md).
+
 ## Expected Outputs Per Run
 
 Each config saves to `outputs/part_X/config_id/`:
@@ -101,6 +111,7 @@ Each config saves to `outputs/part_X/config_id/`:
 - Epochs are fixed at `50`
 - Class weights use inverse proportional frequency based on the training split
 - Output layer is multiclass softmax for `4` classes
+- The multilabel workflow changes only the necessary task-specific parts: six sigmoid outputs, weighted binary cross-entropy, and multilabel metrics
 - Augmentation is applied to the training generator only
 - Validation and test generators use preprocessing only, with no augmentation
 - Transfer-learning models use architecture-specific preprocessing to match their pretrained weights

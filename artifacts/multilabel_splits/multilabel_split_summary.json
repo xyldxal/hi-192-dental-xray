@@ -1,0 +1,90 @@
+{
+  "seed": 42,
+  "image_size": [
+    640,
+    640
+  ],
+  "label_task": "multilabel_classification",
+  "label_rule": "One row per original radiograph ID. Every classification-folder membership becomes an independent binary target; no folder is forced to be the single winning class.",
+  "class_folders": [
+    "BDC-BDR",
+    "Caries",
+    "Fractured Teeth",
+    "Healthy Teeth",
+    "Impacted teeth",
+    "Infection"
+  ],
+  "class_folder_labels": {
+    "BDC-BDR": "Broken down crown/roots",
+    "Caries": "Caries",
+    "Fractured Teeth": "Fractured teeth",
+    "Healthy Teeth": "Healthy teeth",
+    "Impacted teeth": "Impacted teeth",
+    "Infection": "Infection"
+  },
+  "class_folder_to_label_column": {
+    "BDC-BDR": "label_bdc_bdr",
+    "Caries": "label_caries",
+    "Fractured Teeth": "label_fractured_teeth",
+    "Healthy Teeth": "label_healthy_teeth",
+    "Impacted teeth": "label_impacted_teeth",
+    "Infection": "label_infection"
+  },
+  "total_unique_images": 231,
+  "total_folder_memberships": 517,
+  "multi_positive_images": 178,
+  "splits": {
+    "train": {
+      "total": 139,
+      "per_label_positive": {
+        "BDC-BDR": 32,
+        "Caries": 69,
+        "Fractured Teeth": 10,
+        "Healthy Teeth": 135,
+        "Impacted teeth": 59,
+        "Infection": 13
+      },
+      "label_count_distribution": {
+        "1": 30,
+        "2": 57,
+        "3": 37,
+        "4": 12,
+        "5": 3
+      }
+    },
+    "val": {
+      "total": 46,
+      "per_label_positive": {
+        "BDC-BDR": 8,
+        "Caries": 28,
+        "Fractured Teeth": 1,
+        "Healthy Teeth": 43,
+        "Impacted teeth": 13,
+        "Infection": 5
+      },
+      "label_count_distribution": {
+        "1": 13,
+        "2": 16,
+        "3": 15,
+        "4": 2
+      }
+    },
+    "test": {
+      "total": 46,
+      "per_label_positive": {
+        "BDC-BDR": 12,
+        "Caries": 22,
+        "Fractured Teeth": 2,
+        "Healthy Teeth": 45,
+        "Impacted teeth": 15,
+        "Infection": 5
+      },
+      "label_count_distribution": {
+        "1": 10,
+        "2": 22,
+        "3": 9,
+        "4": 5
+      }
+    }
+  }
+}
