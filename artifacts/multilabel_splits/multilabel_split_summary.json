@@ -9,47 +9,38 @@
   "class_folders": [
     "BDC-BDR",
     "Caries",
-    "Fractured Teeth",
     "Healthy Teeth",
-    "Impacted teeth",
-    "Infection"
+    "Impacted teeth"
   ],
   "class_folder_labels": {
     "BDC-BDR": "Broken down crown/roots",
     "Caries": "Caries",
-    "Fractured Teeth": "Fractured teeth",
     "Healthy Teeth": "Healthy teeth",
-    "Impacted teeth": "Impacted teeth",
-    "Infection": "Infection"
+    "Impacted teeth": "Impacted teeth"
   },
   "class_folder_to_label_column": {
     "BDC-BDR": "label_bdc_bdr",
     "Caries": "label_caries",
-    "Fractured Teeth": "label_fractured_teeth",
     "Healthy Teeth": "label_healthy_teeth",
-    "Impacted teeth": "label_impacted_teeth",
-    "Infection": "label_infection"
+    "Impacted teeth": "label_impacted_teeth"
   },
   "total_unique_images": 231,
-  "total_folder_memberships": 517,
-  "multi_positive_images": 178,
+  "total_folder_memberships": 481,
+  "multi_positive_images": 169,
   "splits": {
     "train": {
       "total": 139,
       "per_label_positive": {
         "BDC-BDR": 32,
         "Caries": 69,
-        "Fractured Teeth": 10,
         "Healthy Teeth": 135,
-        "Impacted teeth": 59,
-        "Infection": 13
+        "Impacted teeth": 59
       },
       "label_count_distribution": {
-        "1": 30,
-        "2": 57,
-        "3": 37,
-        "4": 12,
-        "5": 3
+        "1": 35,
+        "2": 60,
+        "3": 36,
+        "4": 8
       }
     },
     "val": {
@@ -57,16 +48,14 @@
       "per_label_positive": {
         "BDC-BDR": 8,
         "Caries": 28,
-        "Fractured Teeth": 1,
         "Healthy Teeth": 43,
-        "Impacted teeth": 13,
-        "Infection": 5
+        "Impacted teeth": 13
       },
       "label_count_distribution": {
-        "1": 13,
-        "2": 16,
-        "3": 15,
-        "4": 2
+        "1": 15,
+        "2": 17,
+        "3": 13,
+        "4": 1
       }
     },
     "test": {
@@ -74,16 +63,14 @@
       "per_label_positive": {
         "BDC-BDR": 12,
         "Caries": 22,
-        "Fractured Teeth": 2,
         "Healthy Teeth": 45,
-        "Impacted teeth": 15,
-        "Infection": 5
+        "Impacted teeth": 15
       },
       "label_count_distribution": {
-        "1": 10,
+        "1": 12,
         "2": 22,
-        "3": 9,
-        "4": 5
+        "3": 10,
+        "4": 2
       }
     }
   }

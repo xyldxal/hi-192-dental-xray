@@ -172,7 +172,7 @@ def build_multilabel_setup_notebook() -> None:
             """
             # Multilabel Classification Setup
 
-            This notebook creates a one-row-per-radiograph manifest from the classification folders. Unlike the original single-label workflow, duplicated folder memberships are preserved as independent binary labels, so one image can have multiple positive classes.
+            This notebook creates a one-row-per-radiograph manifest from the four requested classification folders: `BDC-BDR`, `Caries`, `Healthy Teeth`, and `Impacted teeth`. Unlike the original single-label workflow, duplicated folder memberships are preserved as independent binary labels, so one image can have multiple positive classes.
 
             The CNN experiment grid stays the same: `base_cnn`, `vgg16`, `resnet34`, `densenet121`; dropout `0.2/0.5/0.7`; batch size `16/32/64/128`; dense units `16/32/64`; image size `640 x 640`; epochs `50`; Adam learning rate `0.0001`.
             """

@@ -1,47 +1,47 @@
-split,source_image_id,filename,relative_path,representative_class_folder,class_folders,class_labels,label_count,label_bdc_bdr,label_caries,label_fractured_teeth,label_healthy_teeth,label_impacted_teeth,label_infection
-val,1,1.jpg,Caries/1.jpg,Caries,"[""Caries"", ""Healthy Teeth"", ""Infection""]","[""Caries"", ""Healthy teeth"", ""Infection""]",3,0,1,0,1,0,1
-val,5,5.jpg,Caries/5.jpg,Caries,"[""Caries"", ""Healthy Teeth"", ""Impacted teeth""]","[""Caries"", ""Healthy teeth"", ""Impacted teeth""]",3,0,1,0,1,1,0
-val,8,8.jpg,Caries/8.jpg,Caries,"[""Caries"", ""Healthy Teeth"", ""Infection""]","[""Caries"", ""Healthy teeth"", ""Infection""]",3,0,1,0,1,0,1
-val,18,18.jpg,Caries/18.jpg,Caries,"[""Caries"", ""Healthy Teeth""]","[""Caries"", ""Healthy teeth""]",2,0,1,0,1,0,0
-val,20,20.jpg,Caries/20.jpg,Caries,"[""Caries"", ""Healthy Teeth""]","[""Caries"", ""Healthy teeth""]",2,0,1,0,1,0,0
-val,38,38.jpg,Caries/38.jpg,Caries,"[""Caries"", ""Healthy Teeth""]","[""Caries"", ""Healthy teeth""]",2,0,1,0,1,0,0
-val,40,40.jpg,Caries/40.jpg,Caries,"[""Caries"", ""Healthy Teeth""]","[""Caries"", ""Healthy teeth""]",2,0,1,0,1,0,0
-val,42,42.jpg,Caries/42.jpg,Caries,"[""Caries"", ""Healthy Teeth"", ""Impacted teeth""]","[""Caries"", ""Healthy teeth"", ""Impacted teeth""]",3,0,1,0,1,1,0
-val,43,43.jpg,BDC-BDR/43.jpg,BDC-BDR,"[""BDC-BDR"", ""Caries"", ""Healthy Teeth""]","[""Broken down crown/roots"", ""Caries"", ""Healthy teeth""]",3,1,1,0,1,0,0
-val,44,44.jpg,Healthy Teeth/44.jpg,Healthy Teeth,"[""Healthy Teeth""]","[""Healthy teeth""]",1,0,0,0,1,0,0
-val,54,54.jpg,BDC-BDR/54.jpg,BDC-BDR,"[""BDC-BDR"", ""Caries"", ""Healthy Teeth""]","[""Broken down crown/roots"", ""Caries"", ""Healthy teeth""]",3,1,1,0,1,0,0
-val,59,59.jpg,Caries/59.jpg,Caries,"[""Caries"", ""Healthy Teeth""]","[""Caries"", ""Healthy teeth""]",2,0,1,0,1,0,0
-val,73,73.jpg,BDC-BDR/73.jpg,BDC-BDR,"[""BDC-BDR"", ""Fractured Teeth""]","[""Broken down crown/roots"", ""Fractured teeth""]",2,1,0,1,0,0,0
-val,76,76.jpg,Healthy Teeth/76.jpg,Healthy Teeth,"[""Healthy Teeth""]","[""Healthy teeth""]",1,0,0,0,1,0,0
-val,84,84.jpg,Caries/84.jpg,Caries,"[""Caries"", ""Healthy Teeth"", ""Infection""]","[""Caries"", ""Healthy teeth"", ""Infection""]",3,0,1,0,1,0,1
-val,88,88.jpg,Impacted teeth/88.jpg,Impacted teeth,"[""Impacted teeth""]","[""Impacted teeth""]",1,0,0,0,0,1,0
-val,96,96.jpg,Healthy Teeth/96.jpg,Healthy Teeth,"[""Healthy Teeth""]","[""Healthy teeth""]",1,0,0,0,1,0,0
-val,97,97.jpg,Healthy Teeth/97.jpg,Healthy Teeth,"[""Healthy Teeth""]","[""Healthy teeth""]",1,0,0,0,1,0,0
-val,111,111.jpg,Caries/111.jpg,Caries,"[""Caries"", ""Healthy Teeth""]","[""Caries"", ""Healthy teeth""]",2,0,1,0,1,0,0
-val,113,113.jpg,Caries/113.jpg,Caries,"[""Caries"", ""Healthy Teeth""]","[""Caries"", ""Healthy teeth""]",2,0,1,0,1,0,0
-val,122,122.jpg,BDC-BDR/122.jpg,BDC-BDR,"[""BDC-BDR"", ""Healthy Teeth"", ""Impacted teeth""]","[""Broken down crown/roots"", ""Healthy teeth"", ""Impacted teeth""]",3,1,0,0,1,1,0
-val,123,123.jpg,Caries/123.jpg,Caries,"[""Caries"", ""Healthy Teeth"", ""Impacted teeth""]","[""Caries"", ""Healthy teeth"", ""Impacted teeth""]",3,0,1,0,1,1,0
-val,129,129.jpg,BDC-BDR/129.jpg,BDC-BDR,"[""BDC-BDR"", ""Caries"", ""Healthy Teeth""]","[""Broken down crown/roots"", ""Caries"", ""Healthy teeth""]",3,1,1,0,1,0,0
-val,133,133.jpg,BDC-BDR/133.jpg,BDC-BDR,"[""BDC-BDR"", ""Caries"", ""Healthy Teeth"", ""Impacted teeth""]","[""Broken down crown/roots"", ""Caries"", ""Healthy teeth"", ""Impacted teeth""]",4,1,1,0,1,1,0
-val,137,137.jpg,Caries/137.jpg,Caries,"[""Caries"", ""Healthy Teeth"", ""Impacted teeth""]","[""Caries"", ""Healthy teeth"", ""Impacted teeth""]",3,0,1,0,1,1,0
-val,138,138.jpg,Healthy Teeth/138.jpg,Healthy Teeth,"[""Healthy Teeth""]","[""Healthy teeth""]",1,0,0,0,1,0,0
-val,139,139.jpg,BDC-BDR/139.jpg,BDC-BDR,"[""BDC-BDR"", ""Caries"", ""Healthy Teeth""]","[""Broken down crown/roots"", ""Caries"", ""Healthy teeth""]",3,1,1,0,1,0,0
-val,143,143.jpg,Caries/143.jpg,Caries,"[""Caries"", ""Healthy Teeth""]","[""Caries"", ""Healthy teeth""]",2,0,1,0,1,0,0
-val,155,155.jpg,Caries/155.jpg,Caries,"[""Caries"", ""Healthy Teeth""]","[""Caries"", ""Healthy teeth""]",2,0,1,0,1,0,0
-val,170,170.jpg,Caries/170.jpg,Caries,"[""Caries"", ""Healthy Teeth"", ""Impacted teeth""]","[""Caries"", ""Healthy teeth"", ""Impacted teeth""]",3,0,1,0,1,1,0
-val,176,176.jpg,Healthy Teeth/176.jpg,Healthy Teeth,"[""Healthy Teeth"", ""Impacted teeth""]","[""Healthy teeth"", ""Impacted teeth""]",2,0,0,0,1,1,0
-val,185,185.jpg,Healthy Teeth/185.jpg,Healthy Teeth,"[""Healthy Teeth""]","[""Healthy teeth""]",1,0,0,0,1,0,0
-val,187,187.jpg,Caries/187.jpg,Caries,"[""Caries"", ""Healthy Teeth"", ""Impacted teeth""]","[""Caries"", ""Healthy teeth"", ""Impacted teeth""]",3,0,1,0,1,1,0
-val,189,189.jpg,Healthy Teeth/189.jpg,Healthy Teeth,"[""Healthy Teeth"", ""Impacted teeth""]","[""Healthy teeth"", ""Impacted teeth""]",2,0,0,0,1,1,0
-val,191,191.jpg,Healthy Teeth/191.jpg,Healthy Teeth,"[""Healthy Teeth"", ""Impacted teeth""]","[""Healthy teeth"", ""Impacted teeth""]",2,0,0,0,1,1,0
-val,210,210.jpg,Caries/210.jpg,Caries,"[""Caries"", ""Healthy Teeth""]","[""Caries"", ""Healthy teeth""]",2,0,1,0,1,0,0
-val,212,212.jpg,Caries/212.jpg,Caries,"[""Caries""]","[""Caries""]",1,0,1,0,0,0,0
-val,213,213.jpg,Healthy Teeth/213.jpg,Healthy Teeth,"[""Healthy Teeth""]","[""Healthy teeth""]",1,0,0,0,1,0,0
-val,219,219.jpg,Healthy Teeth/219.jpg,Healthy Teeth,"[""Healthy Teeth"", ""Infection""]","[""Healthy teeth"", ""Infection""]",2,0,0,0,1,0,1
-val,222,222.jpg,BDC-BDR/222.jpg,BDC-BDR,"[""BDC-BDR"", ""Caries"", ""Healthy Teeth"", ""Infection""]","[""Broken down crown/roots"", ""Caries"", ""Healthy teeth"", ""Infection""]",4,1,1,0,1,0,1
-val,225,225.jpg,Caries/225.jpg,Caries,"[""Caries"", ""Healthy Teeth"", ""Impacted teeth""]","[""Caries"", ""Healthy teeth"", ""Impacted teeth""]",3,0,1,0,1,1,0
-val,226,226.jpg,Caries/226.jpg,Caries,"[""Caries"", ""Healthy Teeth""]","[""Caries"", ""Healthy teeth""]",2,0,1,0,1,0,0
-val,231,231.jpg,Healthy Teeth/231.jpg,Healthy Teeth,"[""Healthy Teeth""]","[""Healthy teeth""]",1,0,0,0,1,0,0
-val,241,241.jpg,Healthy Teeth/241.jpg,Healthy Teeth,"[""Healthy Teeth""]","[""Healthy teeth""]",1,0,0,0,1,0,0
-val,245,245.jpg,Healthy Teeth/245.jpg,Healthy Teeth,"[""Healthy Teeth""]","[""Healthy teeth""]",1,0,0,0,1,0,0
-val,256,256.jpg,Healthy Teeth/256.jpg,Healthy Teeth,"[""Healthy Teeth""]","[""Healthy teeth""]",1,0,0,0,1,0,0
+split,source_image_id,filename,relative_path,representative_class_folder,class_folders,class_labels,label_count,label_bdc_bdr,label_caries,label_healthy_teeth,label_impacted_teeth
+val,1,1.jpg,Caries/1.jpg,Caries,"[""Caries"", ""Healthy Teeth""]","[""Caries"", ""Healthy teeth""]",2,0,1,1,0
+val,5,5.jpg,Caries/5.jpg,Caries,"[""Caries"", ""Healthy Teeth"", ""Impacted teeth""]","[""Caries"", ""Healthy teeth"", ""Impacted teeth""]",3,0,1,1,1
+val,8,8.jpg,Caries/8.jpg,Caries,"[""Caries"", ""Healthy Teeth""]","[""Caries"", ""Healthy teeth""]",2,0,1,1,0
+val,18,18.jpg,Caries/18.jpg,Caries,"[""Caries"", ""Healthy Teeth""]","[""Caries"", ""Healthy teeth""]",2,0,1,1,0
+val,20,20.jpg,Caries/20.jpg,Caries,"[""Caries"", ""Healthy Teeth""]","[""Caries"", ""Healthy teeth""]",2,0,1,1,0
+val,38,38.jpg,Caries/38.jpg,Caries,"[""Caries"", ""Healthy Teeth""]","[""Caries"", ""Healthy teeth""]",2,0,1,1,0
+val,40,40.jpg,Caries/40.jpg,Caries,"[""Caries"", ""Healthy Teeth""]","[""Caries"", ""Healthy teeth""]",2,0,1,1,0
+val,42,42.jpg,Caries/42.jpg,Caries,"[""Caries"", ""Healthy Teeth"", ""Impacted teeth""]","[""Caries"", ""Healthy teeth"", ""Impacted teeth""]",3,0,1,1,1
+val,43,43.jpg,BDC-BDR/43.jpg,BDC-BDR,"[""BDC-BDR"", ""Caries"", ""Healthy Teeth""]","[""Broken down crown/roots"", ""Caries"", ""Healthy teeth""]",3,1,1,1,0
+val,44,44.jpg,Healthy Teeth/44.jpg,Healthy Teeth,"[""Healthy Teeth""]","[""Healthy teeth""]",1,0,0,1,0
+val,54,54.jpg,BDC-BDR/54.jpg,BDC-BDR,"[""BDC-BDR"", ""Caries"", ""Healthy Teeth""]","[""Broken down crown/roots"", ""Caries"", ""Healthy teeth""]",3,1,1,1,0
+val,59,59.jpg,Caries/59.jpg,Caries,"[""Caries"", ""Healthy Teeth""]","[""Caries"", ""Healthy teeth""]",2,0,1,1,0
+val,73,73.jpg,BDC-BDR/73.jpg,BDC-BDR,"[""BDC-BDR""]","[""Broken down crown/roots""]",1,1,0,0,0
+val,76,76.jpg,Healthy Teeth/76.jpg,Healthy Teeth,"[""Healthy Teeth""]","[""Healthy teeth""]",1,0,0,1,0
+val,84,84.jpg,Caries/84.jpg,Caries,"[""Caries"", ""Healthy Teeth""]","[""Caries"", ""Healthy teeth""]",2,0,1,1,0
+val,88,88.jpg,Impacted teeth/88.jpg,Impacted teeth,"[""Impacted teeth""]","[""Impacted teeth""]",1,0,0,0,1
+val,96,96.jpg,Healthy Teeth/96.jpg,Healthy Teeth,"[""Healthy Teeth""]","[""Healthy teeth""]",1,0,0,1,0
+val,97,97.jpg,Healthy Teeth/97.jpg,Healthy Teeth,"[""Healthy Teeth""]","[""Healthy teeth""]",1,0,0,1,0
+val,111,111.jpg,Caries/111.jpg,Caries,"[""Caries"", ""Healthy Teeth""]","[""Caries"", ""Healthy teeth""]",2,0,1,1,0
+val,113,113.jpg,Caries/113.jpg,Caries,"[""Caries"", ""Healthy Teeth""]","[""Caries"", ""Healthy teeth""]",2,0,1,1,0
+val,122,122.jpg,BDC-BDR/122.jpg,BDC-BDR,"[""BDC-BDR"", ""Healthy Teeth"", ""Impacted teeth""]","[""Broken down crown/roots"", ""Healthy teeth"", ""Impacted teeth""]",3,1,0,1,1
+val,123,123.jpg,Caries/123.jpg,Caries,"[""Caries"", ""Healthy Teeth"", ""Impacted teeth""]","[""Caries"", ""Healthy teeth"", ""Impacted teeth""]",3,0,1,1,1
+val,129,129.jpg,BDC-BDR/129.jpg,BDC-BDR,"[""BDC-BDR"", ""Caries"", ""Healthy Teeth""]","[""Broken down crown/roots"", ""Caries"", ""Healthy teeth""]",3,1,1,1,0
+val,133,133.jpg,BDC-BDR/133.jpg,BDC-BDR,"[""BDC-BDR"", ""Caries"", ""Healthy Teeth"", ""Impacted teeth""]","[""Broken down crown/roots"", ""Caries"", ""Healthy teeth"", ""Impacted teeth""]",4,1,1,1,1
+val,137,137.jpg,Caries/137.jpg,Caries,"[""Caries"", ""Healthy Teeth"", ""Impacted teeth""]","[""Caries"", ""Healthy teeth"", ""Impacted teeth""]",3,0,1,1,1
+val,138,138.jpg,Healthy Teeth/138.jpg,Healthy Teeth,"[""Healthy Teeth""]","[""Healthy teeth""]",1,0,0,1,0
+val,139,139.jpg,BDC-BDR/139.jpg,BDC-BDR,"[""BDC-BDR"", ""Caries"", ""Healthy Teeth""]","[""Broken down crown/roots"", ""Caries"", ""Healthy teeth""]",3,1,1,1,0
+val,143,143.jpg,Caries/143.jpg,Caries,"[""Caries"", ""Healthy Teeth""]","[""Caries"", ""Healthy teeth""]",2,0,1,1,0
+val,155,155.jpg,Caries/155.jpg,Caries,"[""Caries"", ""Healthy Teeth""]","[""Caries"", ""Healthy teeth""]",2,0,1,1,0
+val,170,170.jpg,Caries/170.jpg,Caries,"[""Caries"", ""Healthy Teeth"", ""Impacted teeth""]","[""Caries"", ""Healthy teeth"", ""Impacted teeth""]",3,0,1,1,1
+val,176,176.jpg,Healthy Teeth/176.jpg,Healthy Teeth,"[""Healthy Teeth"", ""Impacted teeth""]","[""Healthy teeth"", ""Impacted teeth""]",2,0,0,1,1
+val,185,185.jpg,Healthy Teeth/185.jpg,Healthy Teeth,"[""Healthy Teeth""]","[""Healthy teeth""]",1,0,0,1,0
+val,187,187.jpg,Caries/187.jpg,Caries,"[""Caries"", ""Healthy Teeth"", ""Impacted teeth""]","[""Caries"", ""Healthy teeth"", ""Impacted teeth""]",3,0,1,1,1
+val,189,189.jpg,Healthy Teeth/189.jpg,Healthy Teeth,"[""Healthy Teeth"", ""Impacted teeth""]","[""Healthy teeth"", ""Impacted teeth""]",2,0,0,1,1
+val,191,191.jpg,Healthy Teeth/191.jpg,Healthy Teeth,"[""Healthy Teeth"", ""Impacted teeth""]","[""Healthy teeth"", ""Impacted teeth""]",2,0,0,1,1
+val,210,210.jpg,Caries/210.jpg,Caries,"[""Caries"", ""Healthy Teeth""]","[""Caries"", ""Healthy teeth""]",2,0,1,1,0
+val,212,212.jpg,Caries/212.jpg,Caries,"[""Caries""]","[""Caries""]",1,0,1,0,0
+val,213,213.jpg,Healthy Teeth/213.jpg,Healthy Teeth,"[""Healthy Teeth""]","[""Healthy teeth""]",1,0,0,1,0
+val,219,219.jpg,Healthy Teeth/219.jpg,Healthy Teeth,"[""Healthy Teeth""]","[""Healthy teeth""]",1,0,0,1,0
+val,222,222.jpg,BDC-BDR/222.jpg,BDC-BDR,"[""BDC-BDR"", ""Caries"", ""Healthy Teeth""]","[""Broken down crown/roots"", ""Caries"", ""Healthy teeth""]",3,1,1,1,0
+val,225,225.jpg,Caries/225.jpg,Caries,"[""Caries"", ""Healthy Teeth"", ""Impacted teeth""]","[""Caries"", ""Healthy teeth"", ""Impacted teeth""]",3,0,1,1,1
+val,226,226.jpg,Caries/226.jpg,Caries,"[""Caries"", ""Healthy Teeth""]","[""Caries"", ""Healthy teeth""]",2,0,1,1,0
+val,231,231.jpg,Healthy Teeth/231.jpg,Healthy Teeth,"[""Healthy Teeth""]","[""Healthy teeth""]",1,0,0,1,0
+val,241,241.jpg,Healthy Teeth/241.jpg,Healthy Teeth,"[""Healthy Teeth""]","[""Healthy teeth""]",1,0,0,1,0
+val,245,245.jpg,Healthy Teeth/245.jpg,Healthy Teeth,"[""Healthy Teeth""]","[""Healthy teeth""]",1,0,0,1,0
+val,256,256.jpg,Healthy Teeth/256.jpg,Healthy Teeth,"[""Healthy Teeth""]","[""Healthy teeth""]",1,0,0,1,0

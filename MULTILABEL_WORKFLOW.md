@@ -18,7 +18,7 @@ The original CNN experiment specification is preserved where it still applies:
 The necessary multilabel changes are:
 
 - One manifest row per original radiograph ID
-- Six binary label columns: `BDC-BDR`, `Caries`, `Fractured Teeth`, `Healthy Teeth`, `Impacted teeth`, `Infection`
+- Four binary label columns: `BDC-BDR`, `Caries`, `Healthy Teeth`, `Impacted teeth`
 - Sigmoid output units instead of softmax
 - Weighted binary cross-entropy instead of categorical cross-entropy
 - Multilabel metrics: subset accuracy, label accuracy, macro/micro precision, recall, F1, specificity, MCC, and AUC
@@ -28,8 +28,8 @@ The necessary multilabel changes are:
 Generated from `Dental OPG XRAY Dataset/Dental OPG XRAY Dataset/Dental OPG (Classification)`:
 
 - Unique radiographs: `231`
-- Total folder memberships: `517`
-- Images with multiple positive labels: `178`
+- Total folder memberships: `481`
+- Images with multiple positive labels: `169`
 - Train/validation/test split: `139 / 46 / 46`
 
 The split artifacts live in:

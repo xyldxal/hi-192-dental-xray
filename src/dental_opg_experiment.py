@@ -53,7 +53,7 @@ ALL_CLASS_FOLDERS = {
     "Infection": "Infection",
 }
 
-MULTILABEL_CLASS_FOLDERS = tuple(sorted(ALL_CLASS_FOLDERS))
+MULTILABEL_CLASS_FOLDERS = tuple(sorted(INCLUDED_CLASS_FOLDERS))
 
 YOLO_CLASS_ID_TO_FOLDER = {
     0: "Caries",
