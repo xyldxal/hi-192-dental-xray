@@ -1676,6 +1676,15 @@ def train_single_config(
 
     output_root = _ensure_directory(resolve_outputs_dir(outputs_dir))
     run_dir = _ensure_directory(output_root / f"part_{part_id}" / str(config["config_id"]))
+    model_artifacts = save_model_artifacts(
+        model,
+        run_dir,
+        metadata={
+            "task_type": "single_label_classification",
+            "class_names": [INCLUDED_CLASS_FOLDERS[folder] for folder in sorted(INCLUDED_CLASS_FOLDERS)],
+        },
+    )
+    metrics["saved_artifacts"] = model_artifacts
 
     save_history_artifacts(history, run_dir)
     save_auc_artifacts(
@@ -1800,6 +1809,16 @@ def train_single_multilabel_config(
 
     output_root = _ensure_directory(resolve_outputs_dir(outputs_dir))
     run_dir = _ensure_directory(output_root / f"part_{part_id}" / str(config["config_id"]))
+    model_artifacts = save_model_artifacts(
+        model,
+        run_dir,
+        metadata={
+            "task_type": "multilabel_classification",
+            "label_columns": list(label_columns),
+            "threshold": float(threshold),
+        },
+    )
+    metrics["saved_artifacts"] = model_artifacts
 
     save_history_artifacts(history, run_dir)
     save_multilabel_auc_artifacts(
@@ -1854,6 +1873,33 @@ def save_history_artifacts(history, run_dir: Path | str):
     figure.tight_layout()
     figure.savefig(output_dir / "loss_accuracy_curves.png", dpi=200, bbox_inches="tight")
     plt.close(figure)
+
+
+def save_model_artifacts(model, run_dir: Path | str, metadata: Dict[str, object] | None = None) -> Dict[str, str]:
+    output_dir = _ensure_directory(Path(run_dir))
+
+    model_path = output_dir / "model.keras"
+    weights_path = output_dir / "model.weights.h5"
+    metadata_path = output_dir / "model_artifacts.json"
+
+    model.save(model_path)
+    model.save_weights(weights_path)
+
+    artifact_metadata = {
+        "model_path": str(model_path),
+        "weights_path": str(weights_path),
+        "metadata_path": str(metadata_path),
+        "format": "keras_v3",
+    }
+    if metadata:
+        artifact_metadata.update(metadata)
+
+    metadata_path.write_text(json.dumps(artifact_metadata, indent=2), encoding="utf-8")
+    return {
+        "model_path": str(model_path),
+        "weights_path": str(weights_path),
+        "metadata_path": str(metadata_path),
+    }
 
 
 def save_auc_artifacts(y_true, probabilities, run_dir: Path | str):
