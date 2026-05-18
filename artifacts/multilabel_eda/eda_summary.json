@@ -1,0 +1,12 @@
+{
+    "total_images": 231,
+    "train_images": 139,
+    "val_images": 46,
+    "test_images": 46,
+    "label_frequencies": {
+        "Bdc Bdr": 52,
+        "Caries": 119,
+        "Healthy Teeth": 223,
+        "Impacted Teeth": 87
+    }
+}
